@@ -1,0 +1,46 @@
+=== TOLAB — Quick commands & passwords ===
+
+# Start frontend dev server (port 5173)
+cd C:\nextlab\frontend
+npx vite --host 0.0.0.0
+
+# Start backend (port 8000)
+cd C:\nextlab\backend
+pip install -e ".[dev]"
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# Seed demo data (before first use)
+cd C:\nextlab\backend
+python -m app.cli.seed
+
+# Tests (backend — SQLite, no docker needed)
+cd C:\nextlab\backend
+pytest -v
+
+# TypeScript check (frontend)
+cd C:\nextlab\frontend
+npx tsc --noEmit
+
+# Frontend lint
+cd C:\nextlab\frontend
+npx tsc --noEmit
+
+# ── Demo credentials (after seeding) ──
+# Email:    admin@tolab.dev
+# Password: tolab-admin
+
+# ── Default DB credentials (from .env.example) ──
+# POSTGRES_USER: tolab
+# POSTGRES_PASSWORD: tolab
+# POSTGRES_DB: tolab
+# POSTGRES_HOST: localhost
+# POSTGRES_PORT: 5432
+
+# ── Redis ──
+# REDIS_HOST: localhost
+# REDIS_PORT: 6379
+
+# ── JWT secrets (for development only — change in production!) ──
+# SECRET_KEY: change-me-to-a-random-string-at-least-32-chars
+# ACCESS_TOKEN_EXPIRE_MINUTES: 30
+# REFRESH_TOKEN_EXPIRE_DAYS: 7
