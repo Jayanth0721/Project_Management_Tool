@@ -100,11 +100,16 @@ def add_csrf_middleware(app: FastAPI):
     """
 
     @app.middleware("http")
-    async def csrf_middleware(request: Request, call_next: Callable[[Request], Awaitable[Response]]) -> Response:
+    async def csrf_middleware(request: Request, call_next):
         if request.method in ("POST", "PUT", "PATCH", "DELETE"):
-            # Allow token-less mutation for auth endpoints (login/register use form data)
             path = request.url.path
+
             if path.startswith(("/api/v1/auth/", "/api/v1/users/register")):
+                return await call_next(request)
+
+            # Skip CSRF for Bearer token authentication
+            auth = request.headers.get("authorization", "")
+            if auth.startswith("Bearer "):
                 return await call_next(request)
 
             csrf_header = request.headers.get("x-csrf-token")
