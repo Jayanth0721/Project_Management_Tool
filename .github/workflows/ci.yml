@@ -19,7 +19,8 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - run: pip install -e ".[dev]"
+      - run: pip install -r requirements.txt
+      - run: pip install pytest pytest-asyncio factory-boy ruff coverage
       - run: pytest -v
 
   frontend:
