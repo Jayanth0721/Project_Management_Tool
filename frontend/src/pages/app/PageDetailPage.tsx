@@ -66,7 +66,7 @@ export function PageDetailPage() {
     extensions: [StarterKit],
     content: "",
     editable: editMode,
-    onUpdate: ({ editor: ed }) => {
+    onUpdate: ({ editor }) => {
       // body is tracked via editor.getHTML() at save time
     },
   });

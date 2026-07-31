@@ -183,7 +183,7 @@ export function DashboardPage() {
             <p className="text-sm text-muted-foreground">No recent activity.</p>
           ) : (
             <div className="space-y-1">
-              {activity.slice(0, 8).map((a, idx) => (
+              {activity.slice(0, 8).map((a) => (
                 <div
                   key={a.id}
                   className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors hover:bg-muted/50"

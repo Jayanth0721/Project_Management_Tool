@@ -1,6 +1,5 @@
 import { useEffect, useRef, useCallback } from "react";
 import { useAuthStore } from "@/stores/authStore";
-import { useToastStore } from "@/stores/toastStore";
 
 type EventHandler = (data: any) => void;
 
@@ -8,9 +7,9 @@ const WS_URL = `${import.meta.env.VITE_WS_URL || "ws://localhost:8000/api/v1"}`;
 
 export function useWebSocket(handlers?: Record<string, EventHandler>) {
   const wsRef = useRef<WebSocket | null>(null);
-  const reconnectTimer = useRef<ReturnType<typeof setTimeout>>();
+  const reconnectTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const accessToken = useAuthStore((s) => s.accessToken);
-  const addToast = useToastStore((s) => s.addToast);
+  // const addToast = useToastStore((s) => s.addToast);
 
   const connect = useCallback(() => {
     if (!accessToken) return;
@@ -25,8 +24,9 @@ export function useWebSocket(handlers?: Record<string, EventHandler>) {
       try {
         const msg = JSON.parse(event.data);
         if (msg.event === "pong") return;
-        if (handlers?.[msg.event]) {
-          handlers[msg.event](msg.data);
+        const handler = handlers?.[msg.event];
+        if (handler) {
+          handler(msg.data);
         }
       } catch {
         // ignore parse errors
@@ -57,7 +57,9 @@ export function useWebSocket(handlers?: Record<string, EventHandler>) {
     const ping = setInterval(() => send("ping"), 30000);
     return () => {
       clearInterval(ping);
-      clearTimeout(reconnectTimer.current);
+      if (reconnectTimer.current) {
+        clearTimeout(reconnectTimer.current);
+      }
       wsRef.current?.close();
     };
   }, [connect, send]);

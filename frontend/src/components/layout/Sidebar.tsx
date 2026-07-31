@@ -51,7 +51,7 @@ export function Sidebar() {
   const [unread, setUnread] = useState(0);
   const { logout } = useAuth();
   const navigate = useNavigate();
-  const addToast = useToastStore((s) => s.addToast);
+  // const addToast = useToastStore((s) => s.addToast); #to test in versel deployment commented
 
   useEffect(() => {
     api.get("/api/v1/notifications").then((r) => {

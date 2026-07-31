@@ -46,7 +46,7 @@ export function CoffeeMascot({ beverage, focusField, loading }: MascotProps) {
   const liquidColor = isCoffee ? "bg-[#4A2C17]" : "bg-[#C18B3D]";
   const accentText = isCoffee ? "text-[#B07851]" : "text-[#A87742]";
   // Liquid surface highlight
-  const surfaceColor = isCoffee ? "via-[#6B4426]" : "via-[#D9A45C]";
+  // const surfaceColor = isCoffee ? "via-[#6B4426]" : "via-[#D9A45C]";
   const cupInAlcove = phase === "cupFront" || phase === "pouring" || phase === "served";
   const hasLiquid = phase === "pouring" || phase === "served";
 

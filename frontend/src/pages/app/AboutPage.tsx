@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Link } from "@tanstack/react-router";
 import {
   LayoutDashboard, Briefcase, Columns3, ListTodo, FileText, Search, Bell,
-  MessageSquare, Paperclip, User, Sun, Moon, Coffee, Sparkles, ArrowRight,
+  MessageSquare, User, Sparkles, ArrowRight,
 } from "lucide-react";
 
 const sections = [

@@ -9,10 +9,10 @@ import { CSS } from "@dnd-kit/utilities";
 import api from "@/lib/api";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
+// import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Modal } from "@/components/ui/Modal";
 import { Spinner } from "@/components/ui/Spinner";
-import { Avatar } from "@/components/ui/Avatar";
+// import { Avatar } from "@/components/ui/Avatar";
 import { useToastStore } from "@/stores/toastStore";
 import { useWorkspaceStore } from "@/stores/workspaceStore";
 

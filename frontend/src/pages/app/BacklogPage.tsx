@@ -34,12 +34,12 @@ interface BacklogData {
 
 export function BacklogPage() {
   const { projectKey } = useParams({ from: "/app/projects/$projectKey/backlog" });
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const selectedWorkspaceId = useWorkspaceStore((s) => s.selectedWorkspaceId);
   const addToast = useToastStore((s) => s.addToast);
   const [data, setData] = useState<BacklogData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [draggedIssue, setDraggedIssue] = useState<string | null>(null);
+  // const [draggedIssue, setDraggedIssue] = useState<string | null>(null);
 
   const fetchBacklog = useCallback(async () => {
     if (!projectKey || !selectedWorkspaceId) return;
