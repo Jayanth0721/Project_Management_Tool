@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { useParams, useNavigate } from "@tanstack/react-router";
+import { useParams } from "@tanstack/react-router";
 import { Plus, ArrowRight, Target, Calendar, GripVertical } from "lucide-react";
 import { useWorkspaceStore } from "@/stores/workspaceStore";
 import { useToastStore } from "@/stores/toastStore";

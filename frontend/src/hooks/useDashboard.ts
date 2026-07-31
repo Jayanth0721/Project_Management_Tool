@@ -106,6 +106,33 @@ export function useStatusMap(projects: Project[] | undefined) {
   });
 }
 
+export function useCounts() {
+  const { selectedWorkspaceId } = useWorkspaceStore();
+
+  const spaces = useQuery({
+    queryKey: ["dashboard-spaces-count", selectedWorkspaceId],
+    queryFn: () =>
+      api
+        .get<unknown[]>(`/api/v1/workspaces/${selectedWorkspaceId}/spaces`)
+        .then((r) => (r.data as unknown[]).length),
+    enabled: !!selectedWorkspaceId,
+  });
+
+  const members = useQuery({
+    queryKey: ["dashboard-members-count", selectedWorkspaceId],
+    queryFn: () =>
+      api
+        .get<unknown[]>(`/api/v1/workspaces/${selectedWorkspaceId}/members`)
+        .then((r) => (r.data as unknown[]).length),
+    enabled: !!selectedWorkspaceId,
+  });
+
+  return {
+    spacesCount: spaces.data ?? 0,
+    membersCount: members.data ?? 0,
+  };
+}
+
 // export function useCounts(projects: Project[] | undefined) {
 //   const { selectedWorkspaceId } = useWorkspaceStore();
 

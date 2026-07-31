@@ -19,7 +19,7 @@ export function DashboardPage() {
   const { data: projects, isLoading: loadingProjects } = useProjects();
   const { data: issues, isLoading: loadingIssues } = useIssuesForProjects(projects);
   const { data: statusMap } = useStatusMap(projects);
-  const { spacesCount, membersCount } = useCounts(projects);
+  const { spacesCount, membersCount } = useCounts();
   const { data: activity } = useActivityFeed();
   const { data: velocity } = useVelocity();
   const statusData = useStatusDistribution(issues, statusMap);

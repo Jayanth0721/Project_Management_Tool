@@ -17,7 +17,6 @@ import {
   Github,
   GitBranch,
   Mail,
-  Cloud,
   Bot,
 } from "lucide-react";
 
