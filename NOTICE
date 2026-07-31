@@ -1,0 +1,34 @@
+Tolab — Project Management Tool
+Copyright (c) 2026 Jayanth
+
+This product is licensed under the Business Source License 1.1 (BSL 1.1).
+See the LICENSE file in this repository for the full text of the license.
+
+Licensed Work:        Tolab (frontend, backend, and related assets)
+Licensor:             Jayanth
+Change Date:          2029-07-31
+Change License:       GNU General Public License v2.0 or later
+
+Source code repository:
+  https://github.com/Jayanth0721/Project_Management_Tool
+
+
+Third-Party Components
+-----------------------
+
+This product includes third-party components and libraries which are
+distributed under their own licenses. See the individual package manifests
+(backend/pyproject.toml, frontend/package.json) for the complete list of
+dependencies and their license terms.
+
+Notable third-party components include:
+
+  - FastAPI (MIT)                 https://fastapi.tiangolo.com
+  - SQLAlchemy (MIT)              https://www.sqlalchemy.org
+  - React (MIT)                   https://react.dev
+  - Vite (MIT)                    https://vitejs.dev
+  - TanStack Router (MIT)         https://tanstack.com/router
+  - Tailwind CSS (MIT)            https://tailwindcss.com
+  - TipTap (MIT)                  https://tiptap.dev
+
+All third-party trademarks are the property of their respective owners.

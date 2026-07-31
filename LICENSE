@@ -1,0 +1,134 @@
+Business Source License 1.1
+
+Parameters
+
+License Matrix
+--------------
+
+The following parameters apply to this Business Source License 1.1:
+
+  Licensor:          Jayanth
+  Work:              Tolab — Project Management Tool
+                     (the complete source code repository located at
+                     https://github.com/Jayanth0721/Project_Management_Tool
+                     including the frontend and backend applications,
+                     documentation, configuration files, and related assets)
+
+  Change Date:       2029-07-31    (four years from the date of first release)
+
+  Change License:    GNU General Public License Version 2.0 or later
+                     ("GPL v2 or later")
+                     https://www.gnu.org/licenses/gpl-2.0.html
+
+
+Additional Use Grant
+--------------------
+
+The Licensor grants an additional use permission for the Work
+("Additional Use Grant") as described below, subject to the
+conditions of this License.
+
+1. Non-Production Internal Use.
+
+   You may use the Work for your own personal, non-commercial
+   purposes, including study, evaluation, and running the Work
+   unmodified on a single workstation or development machine.
+
+2. Evaluation and Learning.
+
+   You may read, compile, run, and modify the Work solely for the
+   purpose of evaluation and learning how the software works, or
+   for contributing improvements back to the Licensor.
+
+3. Authorized Production Use.
+
+   Organizations that have obtained a commercial license from the
+   Licensor, organizations whose total annual gross revenue is less
+   than one million USD ($1,000,000) in the most recent fiscal year,
+   and any individual using the Work for personal/non-commercial
+   purposes may run the Work in production subject to the conditions
+   of this License.
+
+Conditions of the Additional Use Grant
+---------------------------------------
+
+The Additional Use Grant above does NOT include any right to:
+
+  (a) sell, sublicense, or distribute the Work, or any modification
+      of the Work, to any third party for a fee or other
+      consideration; or
+
+  (b) use the Work, or any modification of the Work, in a commercial
+      offering of a product or service that competes with the Work as
+      offered by the Licensor.
+
+For any use not expressly permitted by this Additional Use Grant,
+you must obtain a commercial license from the Licensor.
+
+
+Terms
+-----
+
+The Licensor hereby grants you the right to copy, modify, create
+derivative works, redistribute, and non-productively use the Work
+under the conditions of this License, subject to the following
+terms and conditions.
+
+1. The Work may only be used as expressly permitted by the
+   Additional Use Grant above, or under a separate written
+   commercial license agreement entered into with the Licensor.
+
+2. Redistributions of the Work must retain the above copyright
+   notice, this License (including the parameters above and the
+   Additional Use Grant), and the following disclaimer.
+
+3. Redistributions of the Work in binary form must reproduce the
+   above copyright notice, this License (including the parameters
+   above and the Additional Use Grant), and the following
+   disclaimer in the documentation and/or other materials provided
+   with the distribution.
+
+4. Neither the name of the Licensor, the Work, nor the names of
+   its contributors may be used to endorse or promote products
+   derived from the Work without specific prior written permission
+   of the Licensor.
+
+5. Modified versions of the Work must be clearly marked as such and
+   must not be misrepresented as the original Work.
+
+6. The Change Date and Change License parameters above are an
+   integral part of this License. On or after the Change Date, the
+   Work will additionally be available under the terms of the
+   Change License, as specified above.
+
+7. This License does not convey any rights to trademarks, service
+   marks, or trade names of the Licensor, except as required for
+   reasonable and customary use in describing the origin of the Work
+   and reproducing the content of the NOTICE file.
+
+
+Disclaimer
+----------
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
+
+
+GNU General Public License v2.0 or later
+-----------------------------------------
+
+On or after the Change Date (2029-07-31), the Work will also be
+made available under the terms of the GNU General Public License
+Version 2.0 or later, as published by the Free Software Foundation
+and available at https://www.gnu.org/licenses/gpl-2.0.html.
+
+You may, at your option, continue to use the Work under the terms of
+this Business Source License 1.1 even after the Change Date, or you
+may, at your option, use the Work under the terms of the Change
+License.
